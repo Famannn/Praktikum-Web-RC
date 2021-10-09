@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Lomba Lari</title>
+    <link rel="stylesheet" type="text/css" href="halamanPendaftaran.css">
+    <style>
+    header{
+        font-size: 15pt;
+        font-variant: small-caps;
+        text-align: center;
+        padding: 25px;
+        color: white;
+    	background-image: url("bgheader.jfif");
+    	background-size: cover;
+    }
+	body{
+    	background-image: url("bg.jpg");
+    	background-size: 100%;
+	}
+	form{
+    	padding-left: 5%;
+    	color: darkslategrey;
+    	border: solid;
+    	margin-bottom: 0%;
+    	color: white;
+	}
+
+    footer {
+    	font-size: 15pt;
+    	font-variant: small-caps;
+    	padding: 3px;
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    	background-image: url("bgheader.jfif");
+    	color: white;
+    }
+
+        img{
+        	width: 50px;
+        	height: 50px;
+        	margin-top: 10px;
+        align-items: right;
+        	color: white;
+        }
+	</style>
+
+</head>
+<body>
+<header id="header">
+    <h1>Pendaftaran Lomba Lari</h1>
+</header>
+<form action="halamandetailinfo.html" method="GET" class="register-form" id="register-form">
+	<p>Lari termasuk cabang olahraga atletik yang merupakan tertua di dunia. Gerakan atau aktivitas sehari-hari tersebut meliputi gerakan berlari, melompat, dan melempar. Setiap gerakannya menjadi gerak dasar dalam olahraga atletik.
+
+	Atletik juga menjadi cabang olahraga yang sering diperlombakan, seperti nomor lari, jalan, lompat, dan lempar.
+Pada masing-masing cabang, terbagi menjadi nomor perlombaan sendiri. Misalnya, cabang lari estafet, lari jarak menengah, lari jarak jauh, dan sejenisnya. Menurut Winendra (2008), nomor lari dalam cabang atletik adalah cabang yang paling diminati. Sebab, mudah untuk dimainkan dan tidak rumit. (sumber : <a href="https://kumparan.com/info-sport/lari-termasuk-cabang-olahraga-atletik-ini-jenis-jenisnya-1wR9NGqyTFg/1">kumparan</a>) <br>
+	Menurut <a href="https://www.sehatq.com/artikel/mengenal-5-cabang-olahraga-lari-dalam-atletik">SehatQ</a>, terdapat 5 jenis cabang olahraga lari pada atletik. Yaitu : <br>
+        <ol>
+            <li>Lari jarak pendek</li>
+            <li>Lari jarak menengah</li>
+            <li>Lari jarak jauh</li>
+            <li>Lari estafet</li>
+            <li>Lari gawang</li>
+        </ol><br><br>
+    Selain itu, berdasarkan <a href="https://hellosehat.com/kebugaran/kardio/8-jenis-olahraga-lari-manfaat/">hellosehat</a> terdapat beberapa macam olahraga lari yang paling umum yang dapat dijadikan sebagai rutinitas untuk meningkatkan kebugaran tubuh. Yaitu :<br>
+        <ol>
+            <li>Lari pemulihan</li>
+            <li>Lari dasar</li>
+            <li>Lari jangka panjang</li>
+            <li>Lari progresif</li>
+            <li>Fartlek</li>
+            <li>Hill repeats</li>
+        </ol><br><br>
+        Ayo segera ikuti lombanya, catat tanggalnya jangan sampai terlewat!!!
+</p>
+</form> <br>
+<form action="halamandetailinfo.html" method="GET" class="register-form" id="register-form">
+    <h2>Pendaftaran Lomba Lari</h2>
+    <div class="form-row">
+        <label for="email">Email :</label >
+        <input type="email" name="email" id="email" required style="border-radius: 20px;" />
+    </div>
+    <div class="form-group">
+        <br><label for="nama">Nama :</label>
+        <input type="text" name="nama" id="nama" required style="border-radius: 20px;"/>
+    </div>
+    <div class="form-group">
+        <br><label for="NIM">No KTP :</label>
+        <input type="text" name="NIM" id="NIM" required style="border-radius: 20px;"/>
+    </div>
+    <div class="form-group">
+        <br><label for="address">Alamat :</label>
+        <textarea name="Alamat" id="" cols="30" rows="10" required style="border-radius: 20px;"></textarea>
+    </div>
+    <div class="form-radio">
+        <br><label for="Kelamin" class="Kelamin">Jenis Kelamin :</label>
+            <input type="radio" name="Kelamin" id="laki-laki"checked>
+            <label for="laki-laki">laki-laki</label>
+            <span class="check"></span>
+            <input type="radio" name="Kelamin" id="Perempuan">
+            <label for="Perempuan">Perempuan</label>
+            <span class="check"></span>
+    </div>
+    <div class="form-radio">
+        <br><label for="cabor" class="cabor">Cabang Olahraga :</label>
+            <input type="radio" name="cabor" id="Estafet"checked>
+            <label for="Estafet">Estafet</label>
+            <span class="check"></span>
+            <input type="radio" name="cabor" id="Sprint">
+            <label for="Sprint">Sprint</label>
+            <span class="check"></span>
+    </div>
+    <div class="form-group">
+        <br><label for="birth_date">Tanggal Lahir :</label>
+        <input type="date" name="birth_date" id="birth_date" style="border-radius: 20px;">
+    </div>
+    <div class="form-group">
+        <br><label for="minat">Asal Institusi :</label>
+        <input type="text" name="Asal Institusi" id="Asal Institusi" required style="border-radius: 20px;"/>
+    </div>                    
+    <div class="form-submit">
+        <br><input type="submit" value="Submit Form" class="submit" name="submit" id="submit" style="background-color: dodgerblue;color: white;" />
+    </div>
+</form>
+
+    <footer>
+    	<a href="#header"><img src="download-removebg-preview.PNG"></a><p>M. Fathurrachman S&copy119140041 Pemrograman Web RC</p>
+        
+    </footer>
+</body>
+</html>
