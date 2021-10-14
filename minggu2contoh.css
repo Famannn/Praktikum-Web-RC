@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+}
+
+.container{
+	width: auto;
+	height: auto;
+}
+
+header{
+	background-color: #4697e1;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.gambarheader{
+	height: 5%;
+	width: 5%;
+}
+
+nav{
+	background-color: grey;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	cursor: default;
+}
+
+button{
+	background-color: grey;
+	border: none;
+	cursor: pointer;
+}
+
+.navbar{
+	margin-left: 1%;
+}
+
+.body{
+	display: flex;
+	height: 100%;
+	width: auto;
+}
+
+.biodata{
+	background-color: #4ca3dd;
+	height: cover;
+	width: 65%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.biodata .judul{
+	margin-top: -5%; 
+	text-align: center;
+}
+
+.foto{
+	margin: 4% 5% 10%;
+	width: 20%;
+	height:  20%;
+	float: left;
+}
+
+.isi-biodata{
+	margin: 6% 25% 0 0;
+}
+.news{
+	background-color: white;
+	border: black solid;
+	height: cover;
+	width: 35%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.judul-news{
+	text-align: center;
+	margin-top: 0%;
+}
+
+.list-news{
+	margin: 5% 0% 0;
+	float: right;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+td{
+	border-top: 2px solid black;
+	padding: 6% 1%;	
+}
+
+a{
+	color: black;
+}
+
+.foto-berita{
+	height: 100%;
+	width: 100%;
+	padding-left: 2%
+}
+
+footer{
+	background-color: black;
+	color: white;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
