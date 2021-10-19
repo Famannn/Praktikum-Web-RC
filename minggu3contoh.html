@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minggu 3</title>
+</head>
+
+    <h1>Halo, apa kabar?</h1>
+
+<!-- opsi 1 -->
+<body id="body">
+    <label for="background"> SIlahkan Pilih Tema :</label>
+    <select name="background" id="background" onchange="bg()">
+    <option value="Normal">Normal</option>
+    <option value="Aqua">Aqua</option>
+    <option value="Sky">Sky</option>
+    <option value="Cool">Cool</option>
+    <option value="Dark">Dark</option>
+    <option value="Antique">Antique</option>
+    <option value="Warm">Warm</option>
+    <option value="Soft">Soft</option>
+</select>
+<br>
+<hr>
+<br>
+
+<!-- opsi 2 -->
+
+<label for="mood">Bagaimana perasaan kamu hari ini?&emsp; : </label>
+<select name="mood" id="mood" onchange="question()">
+    <option value="vg">Sangat bahagia</option>
+    <option value="g">Hari ini aku ulang tahun</option>
+    <option value="nb">Tidak begitu buruk</option>
+    <option value="b">banyak masalah, namun dapat diatasi</option>
+    <option value="vb">Hari yang berat</option>
+</select>
+<p>Kata untukmu Hari ini : </p>
+<b id="word"></b>
+<br>
+<hr>
+
+<!-- opsi 3 -->
+
+<h1>Masukan angka keberuntungan kamu!!!</h1>
+<p>Angka ini akan difaktorialkan hingga angka 1</p>
+<input type="number" name="inputangka" id="inputangka" min="0">
+<button type="submit" onclick="fungsi_faktorial()">CLICK MEE!!!</button>
+
+<!-- script opsi 1 -->
+
+<script>
+    function bg(){
+        var pilihbg=document.getElementById("background");
+
+        if(pilihbg.value=="Normal"){
+            document.body.style.backgroundColor = "white";
+            document.getElementById("body").style.color = "black";
+        }
+        else if(pilihbg.value=="Aqua"){
+            document.body.style.backgroundColor = "#00ffff";
+            document.getElementById("body").style.color = "black";
+        }
+        else if(pilihbg.value=="Sky"){
+            document.body.style.backgroundColor = "skyblue";
+            document.getElementById("body").style.color = "white";
+        }
+        else if(pilihbg.value=="Cool"){
+            document.body.style.backgroundColor = "#29a2ac";
+            document.getElementById("body").style.color = "white";
+        }
+        else if(pilihbg.value=="Dark"){
+            document.body.style.backgroundColor = "black";
+            document.getElementById("body").style.color = "white";
+        }
+        else if(pilihbg.value=="Antique"){
+            document.body.style.backgroundColor = "#6c461f";
+            document.getElementById("body").style.color = "white";
+        }
+        else if(pilihbg.value=="Warm"){
+            document.body.style.backgroundColor = "#f6cd8b";
+            document.getElementById("body").style.color = "black";
+        }
+        else if(pilihbg.value=="Soft"){
+            document.body.style.backgroundColor = "#ffe6cd";
+            document.getElementById("body").style.color = "black";
+        }
+    }
+</script>
+
+<!-- script opsi 2 -->
+
+<script>
+        function question(){
+            var motivated=document.getElementById("mood");
+
+            if(motivated.value=="vg"){
+                var spirit=document.getElementById("word");
+                spirit.innerText = "Wow, tetap semangat, jangan lupa bersyukur!!!";
+            }
+            else if(motivated.value=="g"){
+                var spirit=document.getElementById("word");
+                spirit.innerText = "Selamat ulang tahun!!! Wish u all the best!";
+            }
+            else if(motivated.value=="nb"){
+                var spirit=document.getElementById("word");
+                spirit.innerText = "Semangat, semoga esok hari lebih menyenangkan!!!";
+            }
+            else if(motivated.value=="b"){
+                var spirit=document.getElementById("word");
+                spirit.innerText = "Wow, kamu hebat, teruskan, jangan putus asa ya!!!";
+            }
+            else if(motivated.value=="vb"){
+                var spirit=document.getElementById("word");
+                spirit.innerText = "Tidak apa, kamu hanya perlu istirahat, jangan lupa bahagia, semangat!!!";
+            }
+        }
+</script>
+
+<!-- script opsi 3 -->
+
+<script>
+    function fungsi_faktorial(){
+        var perulangan = document.getElementById("inputangka");
+
+          let faktorial = 1;
+            for(var x = perulangan.value; x >= 1; x--){
+              faktorial = faktorial * x;
+          }
+         
+        var Hasil_faktorial = document.getElementById("faktorial");
+            Hasil_faktorial.innerText = perulangan.value + "! = " + faktorial;
+    }
+</script>
+<p id="faktorial"></p>
+</body>
+</html> 
